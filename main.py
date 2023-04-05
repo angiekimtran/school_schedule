@@ -1,4 +1,4 @@
-
+from school_schedule.student import Student
 
 #first instance
 quinn = Student(
@@ -14,7 +14,8 @@ quinn = Student(
                 ]
             )
 
-quinn.add_class("Painting")
+# chaining
+quinn.add_class("Painting").add_class("History").add_class("Dance")
 quinn.get_num_classes()
 quinn.summary()
 
